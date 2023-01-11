@@ -1,0 +1,58 @@
+.container .title{
+    color: #fff;
+    font-size: 2.5rem;
+    text-align: center;
+    margin: 2rem 0 1rem;
+}
+
+.title .query-text {
+    color: lightgray;
+}
+
+.users-container{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding: 2rem;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.users-container div{
+width: 30%;
+color: #fff;
+display: flex;
+flex-direction: column;
+justify-content: space-between;
+background-color: #111;
+padding: 1rem;
+margin: .5rem;
+
+}
+
+.users-container img{
+    max-width: 100%;
+}
+
+.users-container div img,
+.users-container div h2,
+.users-container div p{
+    margin-bottom: .5rem;
+}
+
+.users-container div a{
+    background-color: white;
+    border: 1.5px solid gray;
+    border-radius: 5px;
+    color: black;
+    padding:.5rem;
+    align-items: center;
+    transition: .5s;
+    text-align: center;
+    font-weight: bold;
+}
+
+.users-container div a:hover{
+    background-color: darkgrey;
+    color: white;
+}

@@ -1,4 +1,3 @@
-const api = require("./api");
 
 const express = require("express");
 
@@ -19,4 +18,4 @@ app.use(router);
 
 
 
-app.listen(8000);
+app.listen(8008);
