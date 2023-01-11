@@ -15,7 +15,7 @@ module.exports ={
             return res.json(response.data);
 
         }).catch((err)=>{
-            res.json({msg: "User not found! "+err})
+            res.json({msg: "Users not found! "+err})
         })
     }
 };
