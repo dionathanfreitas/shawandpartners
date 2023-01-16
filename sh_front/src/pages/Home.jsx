@@ -1,9 +1,9 @@
 import { useState, useEffect } from "react";
 import UserCard from "../components/UserCard";
+
 import './UsersGrid.css'
 
 const userURL = import.meta.env.VITE_API;
-const token = import.meta.env.VITE_API_TOKEN;
 
 
 const Home = () => {
@@ -15,17 +15,18 @@ const Home = () => {
         const res = await fetch(url);
         const data = await res.json();
 
-        setAnyUsers(data)
+        console.log(data);
+
+        setAnyUsers(data);
     }
 
     useEffect(() => {
 
-        const githubURL = `${userURL}?${token}`
-        
+
         getAnyRatedUsers(userURL);
 
 
-    }, [])
+    }, []);
 
 
     return (

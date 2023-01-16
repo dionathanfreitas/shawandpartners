@@ -52,7 +52,12 @@ margin: .5rem;
     font-weight: bold;
 }
 
+.use-card-descriptions ul li span{
+    font-size: 12px;
+}
+
 .users-container div a:hover{
     background-color: darkgrey;
     color: white;
 }
+

@@ -6,6 +6,7 @@ import App from './App'
 import Home from './pages/Home';
 import Search from './pages/Search';
 import User from './pages/User';
+import Repos from './pages/Repos';
 
 import './index.css'
 
@@ -15,7 +16,8 @@ ReactDOM.createRoot(document.getElementById('root')).render(
       <Routes>
         <Route element={<App />}>
           <Route path='/' element={<Home />} />
-          <Route path='/user/:id' element={<User />} />
+          <Route path='details' element={<User />} />
+          <Route path='repos' element={<Repos />} />
           <Route path='search' element={<Search />} />
 
         </Route>
